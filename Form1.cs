@@ -16,5 +16,20 @@ namespace BMI_value
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            double height, weight, bmi;
+            height = double.Parse (txtHeight.Text);
+            weight = double.Parse (txtWeight.Text);
+            bmi = weight / (height * height);
+            txtBMI.Text=bmi.ToString();
+
+        }
     }
 }
